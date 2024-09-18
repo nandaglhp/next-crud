@@ -6,7 +6,7 @@ function Navbar() {
     <header>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark fixed-top border-0 shadow-sm">
         <div className="container">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="navbar-brand">LARAVEL & NEXT.JS</a>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li className="nav-item">
-                <Link href="/posts">
+                <Link href="/posts" legacyBehavior>
                   <a className="nav-link">POSTS</a>
                 </Link>
               </li>
