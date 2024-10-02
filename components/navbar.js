@@ -1,6 +1,5 @@
-//import Link
 import Link from "next/link";
-
+// ORWnV44yFj0Xz2zQYAmGvGVYciBrzUsuAsdZqHfw.jpg
 function Navbar() {
   return (
     <header>

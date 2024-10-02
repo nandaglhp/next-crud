@@ -6,6 +6,7 @@ import Link from "next/link";
 
 //import axios
 import axios from "axios";
+import Image from "next/image";
 
 //fetch with "getServerSideProps"
 export async function getServerSideProps() {
@@ -47,7 +48,7 @@ function PostIndex(props) {
                     {posts.map((post) => (
                       <tr key={post.id}>
                         <td className="text-center">
-                          <img src={`${process.env.NEXT_PUBLIC_API_BACKEND}/storage/posts/${post.image}`} width="150" className="rounded-3" />
+                          <Image src={`${process.env.NEXT_PUBLIC_API_BACKEND}/storage/posts/${post.image}`} width={150} height={150} className="rounded-3" alt={`Image for post ${post.id}`} unoptimized />
                         </td>
                         <td>{post.title}</td>
                         <td>{post.content}</td>
